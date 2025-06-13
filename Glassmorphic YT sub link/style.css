@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  list-style: none;
+  font-family: cursive;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container_1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_1::before {
+  content: "";
+  position: absolute;
+  height: 330px;
+  width: 330px;
+  border-radius: 50%;
+  background: linear-gradient(aqua, magenta);
+  transform: translate(-490px, -150px);
+}
+
+.container_1::after {
+  content: "";
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, aqua, magenta);
+  transform: translate(490px, 150px);
+  transition: all 0.3s ease-in-out;
+}
+
+.container_1 .ball_1 {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background-color: aqua;
+  transform: translate(-250px, 230px);
+  position: absolute;
+}
+
+.container_1 .ball_2 {
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
+  background-color: magenta;
+  transform: translate(-50px, -170px);
+  position: absolute;
+}
+
+.container_1 .ball_3 {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: magenta;
+  transform: translate(70px, 220px);
+  position: absolute;
+}
+
+.container_1 .ball_4 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: aqua;
+  transform: translate(470px, -200px);
+  position: absolute;
+}
+
+.container_1 .box {
+  height: 85vh;
+  width: 75%;
+  padding: 0 20px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(7px);
+  /*important!*/
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.container_1 .box:hover {
+  scale: 1.02;
+  transition: all 0.3s ease-in-out;
+}
+
+.container_1 .box nav {
+  height: 7%;
+  width: 95%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px auto;
+  padding: 20px;
+}
+
+.container_1 .box nav li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.container_1 .box nav li a {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.container_1 .box nav li a:hover {
+  color: magenta;
+  transition: color 0.3s ease-in-out;
+}
+
+.container_1 .box nav .logo {
+  font-size: 40px;
+  font-weight: 600;
+  color: magenta;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.container_1 .box .contains {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  width: 80%;
+  position: relative;
+  margin-top: 8%;
+  padding-left: 80px;
+}
+
+.container_1 .box .contains .section_1 {
+  position: absolute;
+  margin-top: 70px;
+}
+
+.container_1 .box .contains .section_2 img {
+  height: 400px;
+  width: 400px;
+  margin-left: 480px;
+  border-radius: 50px;
+}
+
+.container_1 .box .contains .section_1 h1 {
+  font-size: 55px;
+  margin-left: -50px;
+}
+
+.container_1 .box .contains .section_1 h3 {
+  font-size: 30px;
+  margin-left: -50px;
+  margin-bottom: 20px;
+}
+
+.container_1 .box .contains .section_1 h4 {
+  font-size: 75px;
+  margin-left: -50px;
+}
+
+.container_1 .box .contains .section_1 h4 span {
+  color: magenta;
+}
+
+.container_1 .box .contains .section_1 .button {
+  margin-top: 50px;
+}
+
+.container_1 .box .contains .section_1 .button a {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: bolder;
+}
+
+.container_1 .box .contains .section_1 .button a:hover {
+  cursor: pointer;
+  color: magenta;
+  border-radius: 5px;
+  border: 2px solid magenta;
+  transition: all 0.3s ease-in-out;
+  font-weight: bolder;
+}
+
+.container_1 .box .contains .section_1 .button a:active {
+  cursor: pointer;
+  padding: 11px 21px;
+  color: magenta;
+  border: 2px solid magenta;
+  transition: all 0.3s ease-in-out;
+  font-weight: bolder;
+}
+
+.container_2 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container_2 .box {
+  height: 85vh;
+  width: 75%;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  /*important!*/
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.container_2 .box .head {
+  font-weight: 600;
+  font-size: 35px;
+}
+.container_2 .box .head span {
+  color: magenta;
+}
+.container_2 .box .head {
+  color: aqua;
+}
+
+.container_2 .box h3 .long_talk {
+  font-size: 35px;
+}
+
+.container_2 .box .button {
+  margin-top: 30px;
+}
+
+.container_2 .box .button a {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  font-weight: bolder;
+}
+
+.container_2 .box .button a:hover {
+  cursor: pointer;
+  color: magenta;
+  border-radius: 5px;
+  border: 2px solid magenta;
+  transition: all 0.3s ease-in-out;
+  font-weight: bolder;
+}
+
+.container_2 .box:hover {
+  scale: 1.03;
+  transition: all 0.3s ease-in-out;
+}
+
+.container_2 .ball_1 {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+  background-color: aqua;
+  transform: translate(-450px, -100px);
+  position: absolute;
+  rotate: 15deg;
+}
+
+.container_2 .ball_2 {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: magenta;
+  transform: translate(-500px, -10px);
+  position: absolute;
+  rotate: -25deg;
+}
+
+.container_2 .ball_3 {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px;
+  background-color: aqua;
+  transform: translate(300px, 350px);
+  position: absolute;
+  rotate: -25deg;
+}
+
+.container_2 .ball_4 {
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  background-color: magenta;
+  transform: translate(470px, -150px);
+  position: absolute;
+  rotate: -10deg;
+}
+.container_2 img {
+  position: absolute;
+  scale: 0.8;
+}
+
+.container_3 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(images/bg_pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container_3 .box {
+  height: 85vh;
+  width: 75%;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 10;
+  position: relative;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(5px);
+  /*important!*/
+  box-shadow: -15px 17px 17px rgba(10, 10, 10, 0.25);
+  transition: all 0.3s ease-in-out;
+}
+
+.container_3 .box button {
+  height: 60px;
+  width: 200px;
+  border-radius: 5px;
+  padding-bottom: 3px;
+  font-size: 25px;
+  border: none;
+  background: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s ease-in-out;
+}
+.container_3 .box button:hover {
+  scale: 1.03;
+  transition: all 0.3s ease-in-out;
+}
